@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+html {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+}
+
+#clearfix {
+    clear: both;
+    content: "";
+}
+
+#container {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    margin-bottom: 35px;
+}
+
+#head {
+    font-size: 72px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #555;
+}
+
+#game {
+    width: 480px;
+    height: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tic {
+    position: relative;
+    height: 320px;
+    width: 320px;
+    float: left;
+}
+
+.canvas-box {
+    border: 1px solid #333;
+    background-color: #000;
+    text-align: center;
+    transition: all .3s;
+}
+
+.canvas-box:hover {
+    background-color: #222;
+}
+
+.winning-canvas {
+    animation: winning-blinking .5s cubic-bezier(0,.6,.4,1) infinite;
+}
+
+.winning-canvas {
+    border: 1px solid green;
+    background-color: green;
+}
+
+
+#buttonContainer {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+button {
+    position: relative;
+    border: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#new {
+    width: 320px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #555;
+    float: left;
+    transition: all .3s;
+}
+
+#new:hover {
+    background-color: green;
+}
+
+#score {
+    position: relative;
+    height: 320px;
+    width: 140px;
+    text-align: center;
+    float: right;
+}
+
+#player-x,
+#player-o {
+    position: relative;
+    width: 65px;
+    height: auto;
+    display: inline-block;
+}
+
+#player-x {
+    float: left;
+}
+
+#player-o {
+    float: right;
+}
+
+#score-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#score-x,
+#score-o {
+    width: 65px;
+    height: 65px;
+    font-size: 28px;
+    color: #fff;
+    padding-top: 15px;
+    background-color: #555;
+}
+
+#rules-text {
+    margin-top: 28px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    letter-spacing: 1px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#rules-text > h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+}
+
+#rules-text > ul > li {
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#rules {
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #01ba01;
+    text-transform: uppercase;
+    background-color: #222;
+    float: right;
+    transition: all .3s;
+}
+
+#rules:hover {
+    color: #fff;
+    background-color: #555;
+}
+
+#show {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+}
+
+#result {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+@keyframes winning-blinking {
+    0% {
+        border: 1px solid #005800;
+        background-color: #005800;
+    }
+
+    50% {
+        border: 1px solid #01ba01;
+        background-color: #01ba01;
+    }
+
+    100% {
+        border: 1px solid #005800;
+        background-color: #005800;
+    }
+}

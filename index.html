@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Color</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="" id="container">
+        <header>
+            <h1 id="head">Tic-Tac-Toe</h1>
+        </header>
+
+        <section id="game">
+            <div id="tic">
+                <canvas class="canvas-box box-border" id="canvas1" width="100" height="100"></canvas>
+                <canvas class="canvas-box box-border" id="canvas2" width="100" height="100"></canvas>
+                <canvas class="canvas-box box-border" id="canvas3" width="100" height="100"></canvas>
+                <br />
+                <canvas class="canvas-box box-border" id="canvas4" width="100" height="100"></canvas>
+                <canvas class="canvas-box box-border" id="canvas5" width="100" height="100"></canvas>
+                <canvas class="canvas-box box-border" id="canvas6" width="100" height="100"></canvas>
+                <br />
+                <canvas class="canvas-box box-border" id="canvas7" width="100" height="100"></canvas>
+                <canvas class="canvas-box box-border" id="canvas8" width="100" height="100"></canvas>
+                <canvas class="canvas-box box-border" id="canvas9" width="100" height="100"></canvas>
+            </div>
+            <div id="score">
+                <div id="player-x">
+                    <div id="score-title">Score Player 'X'</div>
+                    <div id="score-x">0</div>
+                </div>
+                <div id="player-o">
+                    <div id="score-title">Score Player 'O'</div>
+                    <div id="score-o">0</div>
+                </div>
+
+                <div id="clearfix"></div>
+
+                <div id="rules-text">
+                    <h2>Rules</h2>
+                    <ul>
+                        <li>Each player has to take turns</li>
+                        <li>The player who fills 3 consecutive rows first wins</li>
+                        <li>You can start a new game at any point</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="clearfix"></div>
+            
+        </section>
+
+        <div id="buttonContainer">
+            <button id="new">New Game</button>
+            <button id="rules">Game Rules</button>
+        </div>
+
+        <div id="show">
+            <h1 id="result">Come and play for fun!</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
