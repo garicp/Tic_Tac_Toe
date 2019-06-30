@@ -60,6 +60,7 @@ header {
 }
 
 .canvas-box {
+    cursor: pointer;
     border: 1px solid #333;
     background-color: #000;
     text-align: center;
@@ -71,7 +72,7 @@ header {
 }
 
 .winning-canvas {
-    animation: winning-blinking .5s cubic-bezier(0,.6,.4,1) infinite;
+    animation: winning-blinking .5s cubic-bezier(0, .6, .4, 1) infinite;
 }
 
 .winning-canvas {
@@ -89,10 +90,15 @@ header {
 }
 
 button {
+    cursor: pointer;
     position: relative;
     border: none;
     font-weight: 400;
     letter-spacing: 1px;
+}
+
+button:focus {
+    outline: 0;
 }
 
 #new {
@@ -161,13 +167,13 @@ button {
     visibility: hidden;
 }
 
-#rules-text > h2 {
+#rules-text>h2 {
     text-transform: uppercase;
     font-size: 20px;
     color: #fff;
 }
 
-#rules-text > ul > li {
+#rules-text>ul>li {
     font-size: 13px;
     font-weight: 300;
     color: #fff;
