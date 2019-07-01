@@ -1,0 +1,111 @@
+@media only screen and (max-width: 340px) {
+
+    #container {
+        width: 100vw;
+        height: 98vh;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    #head {
+        font-size: 40px;
+    }
+
+    #game {
+        width: 320px;
+    }
+
+    #tic {
+        float: none;
+    }
+
+    #buttonContainer {
+        width: 320px;
+        height: 35px;
+        margin-top: 145px;
+    }
+
+    #new {
+        width: 60%;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    #rules {
+        width: 39%;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    #score {
+        margin-top: 8px;
+        height: 60px;
+        width: 320px;
+        float: none;
+    }
+
+    #score-title,
+    #scoreX,
+    #scoreO {
+        position: relative;
+        display: inline-block;
+        /* float: left; */
+    }
+
+    #score-title {
+        width: 60px;
+        font-size: 14px;
+        text-align: right;
+        float: left;
+        top: 8px;
+    }
+
+    #score-x,
+    #score-o {
+        width: 60px;
+        height: 50px;
+        font-size: 28px;
+        padding-top: 6px;
+        float: right;
+    }
+
+    #player-x {
+        width: 130px;
+        margin-right: 10px;
+        float: none;
+    }
+
+    #player-o {
+        width: 130px;
+        margin-left: 10px;
+        float: none;
+    }
+
+    #rules-text {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #rules-text>h2 {
+        font-size: 13px;
+        color: #fff;
+    }
+    
+    #rules-text>ul>li {
+        list-style: none;
+        font-size: 11px;
+        margin-top: 3px;
+        margin-left: 0;
+    }
+
+    #show {
+        margin-top: 100px;
+    }
+
+    #result {
+        font-size: 16px;
+        padding: 5px;
+    }
+}
