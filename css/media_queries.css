@@ -2,7 +2,7 @@
 
     #container {
         width: 100vw;
-        height: 98vh;
+        height: 80vh;
     }
 
     header {
@@ -23,7 +23,7 @@
 
     #buttonContainer {
         width: 320px;
-        height: 35px;
+        height: auto;
         margin-top: 145px;
     }
 
