@@ -254,7 +254,7 @@ window.onload = function () {
 
     let gameRulesText = document.getElementById("rules-text");
 
-    let textButtonRules;
+    let textButtonRules = "Game Rules";
 
     //sliding function
     function gameRules() {
