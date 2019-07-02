@@ -204,7 +204,7 @@ window.onload = function () {
                             winner[j][2]
                         ];
 
-                        highlightCanvas(winnerHighlight[0] + 1, winnerHighlight[1] + 1, winnerHighlight[2] + 1);
+                        highlightCanvas(winnerHighlight[0], winnerHighlight[1], winnerHighlight[2]);
 
                         gameOver = true;
                     }
@@ -236,7 +236,7 @@ window.onload = function () {
     function highlightCanvas(box1, box2, box3) {
         let canvasHighlight = [box1, box2, box3]
         for (i = 0; i < canvasHighlight.length; i++) {
-            selectCanvas(canvasHighlight[i]);
+            selectCanvas(canvasHighlight[i] + 1);
         }
     }
 
